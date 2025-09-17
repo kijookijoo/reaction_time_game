@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reaction Speed Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <h1>Reaction Speed Test</h1>
+            <div class="game-stats">
+                <div class="timer">
+                    <span class="timer-label">Time:</span>
+                    <span class="timer-value" id="timer">15</span>s
+                </div>
+                <div class="score">
+                    <span class="score-label">Score:</span>
+                    <span class="score-value" id="score">0</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="game-area" id="gameArea">
+            <div class="start-screen" id="startScreen">
+                <h2>Click to Start!</h2>
+                <p>Click on red dots as fast as you can!</p>
+                <button class="start-btn" id="startBtn">Start Game</button>
+            </div>
+            
+            <div class="game-over-screen" id="gameOverScreen" style="display: none;">
+                <h2>Game Over!</h2>
+                <div class="final-score">
+                    <p>You clicked <span id="finalScore">0</span> dots!</p>
+                    <p class="performance-text" id="performanceText"></p>
+                </div>
+                <button class="restart-btn" id="restartBtn">Play Again</button>
+            </div>
+        </div>
+        
+        <div class="particles-container" id="particlesContainer"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
